@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">GPS</string>
+    <string name="permission_denied">Permiso denegado, actualizalo desde ajustes.</string>
+    <string name="title_aviso">Aviso</string>
+    <string name="content_aviso">Ubicación desactivada \n
+ ¿Deseas Activarla?</string>
+    <string name="yes">Si</string>
+    <string name="No">No</string>
+    <string name="image">image</string>
 </resources>
