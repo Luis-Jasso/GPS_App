@@ -7,4 +7,7 @@
     <string name="yes">Si</string>
     <string name="No">No</string>
     <string name="image">image</string>
+    <string name="location">Location</string>
+    <string name="location_text">"Latitud: %1$.4f \n Longitud: %2$.4f \n Ultima ubicación: %3$tr"</string>
+    <string name="address_text">"País: %1$s \n Estado: %2$s, Código postal: %3$s \n Dirección: %4$s"</string>
 </resources>

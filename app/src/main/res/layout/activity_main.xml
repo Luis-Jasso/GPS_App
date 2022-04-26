@@ -10,6 +10,7 @@
         android:id="@+id/iv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:src="@drawable/ic_baseline_map_24"
         android:contentDescription="@string/image"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,33 +27,40 @@
         app:layout_constraintGuide_begin="311dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_coordenadas"
         android:layout_width="0dp"
         android:layout_height="200dp"
-        android:text="TextView"
+        android:text="Coordenadas..."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:theme="@style/MaterialAlertDialog.Material3.Body.Text.CenterStacked"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/iv"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_address"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="TextView"
+        android:text="Address..."
+        android:theme="@style/MaterialAlertDialog.Material3.Body.Text.CenterStacked"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_coordenadas" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Button"
+        android:drawableEnd="@drawable/ic_baseline_my_location_24"
+        android:drawableTint="@color/white"
+        android:text="@string/location"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="m" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
